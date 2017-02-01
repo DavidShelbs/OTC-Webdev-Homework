@@ -5,11 +5,13 @@ body
 }
 h1
 {
-  background-color: BurlyWood;
+  /*background-color: BurlyWood;*/
+  /*color: red;*/
   text-align: center;
 }
 h2
 {
-  background-color: BurlyWood;
+  /*background-color: BurlyWood;*/
+  color: red;
   text-align: left;
 }
