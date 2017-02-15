@@ -1,25 +1,27 @@
 body
 {
-  background-color: #A0C2EB;
+  background-color: #B5E2FF;
   text-align: left;
 }
 h1
 {
   /*background-color: BurlyWood;*/
   color: #FAFCFF;
-  background-color: #75A1D6;
+  background-color: #86CFFF;
   padding: 50px;
   margin: 0px 0px 30px 0px;
   text-align: center;
-  border: 3px solid #4F7FB8;
+  border: 3px solid #32ADFC;
+  border-radius: 5px;
   font-size: 60px;
 }
 #section1, #section2, #section3
 {
-  background-color: #CEE1F9;
+  background-color: #86CFFF;
   padding: 20px;
   margin: 0px 0px 2px 0px;
-  border: 3px solid #4F7FB8;
+  border: 3px solid #32ADFC;
+  border-radius: 5px;
 }
 #section1
 {
