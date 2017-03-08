@@ -26,19 +26,18 @@ h1.header
     text-align: center;
     border: 10px solid black;
     border-radius: 5px;
-    width: 75%;
     margin: auto;
 }
 
 /*sightnavigation*/
 .sitenavigation
 {
-  margin-left: 159px;
-  float: left;
-  width: 10%;
+  margin-right: 0;
   background-color: #02222E;
-  border: 5px solid black;
-  border-radius: 5px;
+  width: 20%;
+  float: left;
+  height: 530px;
+  border-right: 5px solid black;
 }
 
 .sitenavigation a
@@ -47,12 +46,17 @@ h1.header
   color: #5F8695;
 }
 
-.sitenavigation a:hover, a:focus
+#intext
+{
+  color: #02222E;
+}
+
+a:hover, a:focus
 {
   text-shadow: 0 0 5px;
 }
 
-.sitenavigation a:active
+a:active
 {
   position: relative;
   top: 1px;
@@ -63,11 +67,15 @@ h1.header
 .maincontent
 {
   background-color: #5F8695;
-  width: 65%;
-  float: right;
-  margin-right: 159px;
-  border: 5px solid black;
-  border-radius: 5px;
+  margin-left: auto;
+  width: 80%;
+  height: 400px;
+  color: #02222E;
+}
+
+.maincontent h2
+{
+  margin-top: 0;
 }
 
 #para::first-letter
@@ -75,10 +83,67 @@ h1.header
   font-size: 30px;
 }
 
+#bye
+{
+  margin-bottom: 0;
+}
+
+#hi
+{
+  margin-top: 0;
+}
+
+#wrapper
+{
+  border-bottom: 10px solid black;
+  border-left: 10px solid black;
+  border-right:10px solid black;
+  border-radius: 5px;
+}
+
+.container
+{
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.img
+{
+  display: inline-block;
+}
+
 /*foot*/
 #foot
 {
   text-align: right;
-  margin: 5px;
   font-size: 12px;
+  height: 125px;
+  padding-right: 5px;
+  border-top: 5px solid black;
+}
+
+/*print styles*/
+@media print
+{
+  article
+  {
+    float: none;
+    width: 100%;
+  }
+   article, body, .maincontent, .container, #heading, #foot, #wrapper, #title, #intext
+   {
+      border: 0;
+      color: rgb(0,0,0);
+      background-color: rgb(255,255,255);
+   }
+
+   body
+   {
+      max-width: 100%;
+   }
+
+   nav
+   {
+     display: none;
+   }
 }
